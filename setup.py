@@ -1,10 +1,15 @@
 from distutils.core import setup
+
+with open("README.md", "r", encoding = "utf-8") as fh:
+    long_description = fh.read()
+
 setup(
   name = 'hspcore',         # How you named your package folder (MyLib)
   packages = ['hspcore'],   # Chose the same as "name"
   version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Hansen Solubility Parameters (HSP) core functions',   # Give a short description about your library
+  long_description=long_description,
   author = 'Alejandro Gutierrez',                   # Type in your name
   author_email = 'a.gutierrez@g-npd.com',      # Type in your E-Mail
   url = 'https://github.com/Gnpd/hspcore',   # Provide either the link to your github or to your website
