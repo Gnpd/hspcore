@@ -32,6 +32,6 @@ def get_hsp(grid,inside_limit=1):
     result = {
         "hsp": [optimization_result.x[0],optimization_result.x[1],optimization_result.x[2]],
         "radius":optimization_result.x[3],
-        "error": 1-optimization_result.fun[0],
+        "error": 1-optimization_result.fun,
     }
     return result

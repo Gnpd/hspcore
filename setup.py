@@ -1,25 +1,22 @@
-from distutils.core import setup
+from setuptools import setup
 
-from pathlib import Path
-this_directory = Path(__file__).parent
-long_description = (this_directory / "README.md").read_text()
+
+with open('README.md') as f:
+    long_description = f.read()
 
 setup(
   name = 'hspcore',
-  packages = ['hspcore'],
-  version = '0.1',
+  version = '0.5',
   license='MIT',
   description = 'Hansen Solubility Parameters (HSP) core functions',
-  long_description=long_description,
   long_description_content_type='text/markdown',
+  long_description=long_description,
   author = 'Alejandro Gutierrez',
   author_email = 'a.gutierrez@g-npd.com',
   url = 'https://github.com/Gnpd/hspcore', 
-  download_url = 'https://github.com/Gnpd/hspcore/archive/refs/tags/v_0.1.tar.gz',
+  download_url = 'https://github.com/Gnpd/hspcore/archive/refs/tags/v_0.2.tar.gz',
   keywords = ['HSP', 'Solubility'],
-  install_requires=[       
-        "scipy",
-      ],
+  install_requires=["scipy"],
   classifiers=[
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',
@@ -27,4 +24,5 @@ setup(
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3.11',
   ],
+  python_requires='>=3.6',
 )
