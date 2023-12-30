@@ -1,20 +1,20 @@
 from setuptools import setup
 
 
-with open('README.md') as f:
-    long_description = f.read()
+with open("README.rst", "r") as description:
+    long_description = description.read()
 
 setup(
   name = 'hspcore',
-  version = '0.5',
+  version = '0.8',
   license='MIT',
   description = 'Hansen Solubility Parameters (HSP) core functions',
-  long_description_content_type='text/markdown',
+  long_description_content_type='text/x-rst',
   long_description=long_description,
   author = 'Alejandro Gutierrez',
   author_email = 'a.gutierrez@g-npd.com',
   url = 'https://github.com/Gnpd/hspcore', 
-  download_url = 'https://github.com/Gnpd/hspcore/archive/refs/tags/v_0.2.tar.gz',
+  download_url = 'https://github.com/Gnpd/hspcore/archive/refs/tags/v_0.6.tar.gz',
   keywords = ['HSP', 'Solubility'],
   install_requires=["scipy"],
   classifiers=[

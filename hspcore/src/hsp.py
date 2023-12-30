@@ -29,9 +29,8 @@ def get_hsp(grid,inside_limit=1):
     minimization_function = build_minimization_function(grid,inside_limit)
     bounds= [(0,30), (0, 30), (0, 30), (0.1, 20)]
     optimization_result = differential_evolution(func=minimization_function, bounds=bounds, tol=1e-8)
-    result = {
-        "hsp": [optimization_result.x[0],optimization_result.x[1],optimization_result.x[2]],
-        "radius":optimization_result.x[3],
-        "error": 1-optimization_result.fun,
-    }
-    return result
+    hsp = [optimization_result.x[0],optimization_result.x[1],optimization_result.x[2]]
+    radius = optimization_result.x[3]
+    error = 1-optimization_result.fun
+
+    return hsp,radius,error
