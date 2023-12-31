@@ -6,7 +6,7 @@ with open("README.rst", "r") as description:
 
 setup(
   name = 'hspcore',
-  version = '0.8',
+  version = '0.9',
   license='MIT',
   description = 'Hansen Solubility Parameters (HSP) core functions',
   long_description_content_type='text/x-rst',
