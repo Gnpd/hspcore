@@ -6,7 +6,7 @@ with open("README.rst", "r") as description:
 
 setup(
   name = 'hspcore',
-  version = '0.9',
+  version = '1.0',
   license='MIT',
   description = 'Hansen Solubility Parameters (HSP) core functions',
   long_description_content_type='text/x-rst',
@@ -14,7 +14,7 @@ setup(
   author = 'Alejandro Gutierrez',
   author_email = 'a.gutierrez@g-npd.com',
   url = 'https://github.com/Gnpd/hspcore', 
-  download_url = 'https://github.com/Gnpd/hspcore/archive/refs/tags/v_0.6.tar.gz',
+  download_url = 'https://github.com/Gnpd/hspcore/archive/refs/tags/v_1.0.tar.gz',
   keywords = ['HSP', 'Solubility'],
   install_requires=["scipy"],
   classifiers=[
