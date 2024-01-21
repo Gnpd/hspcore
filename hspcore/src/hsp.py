@@ -1,5 +1,16 @@
 from scipy.optimize import differential_evolution
 
+def split_grid(grid,inside_limit):
+    '''Splits the solvent grid in inside and outside solvents taking into account the inside limit'''
+    inside = []
+    outside = []
+    for solvent, D, P, H, score in grid:
+        if score <= inside_limit:
+            inside.append([solvent, D, P, H, score])
+        if score > inside_limit:
+            outside.append([solvent, D, P, H, score])
+    return inside,outside
+
 def get_hsp_error(HSP,grid,inside_limit):
     errors = []
     for solvent, D, P, H, score in grid:
