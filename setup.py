@@ -8,7 +8,7 @@ setup(
   name = 'hspcore',
   version = '1.2',
   license='MIT',
-  description = 'Hansen Solubility Parameters (HSP) core functions',
+  description = 'Hansen Solubility Parameters (HSP) core functions.',
   long_description_content_type='text/x-rst',
   long_description=long_description,
   author = 'Alejandro Gutierrez',
