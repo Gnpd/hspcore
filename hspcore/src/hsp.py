@@ -24,7 +24,7 @@ def get_hsp_error(HSP,grid,inside_limit):
         RED = distance/HSP[3]
         
         
-        if ( (RED <= 1 and score == inside_limit) or (RED > 1 and score != inside_limit) ):
+        if ( (RED <= 1 and score <= inside_limit) or (RED > 1 and score > inside_limit) ):
             errors.append(0)
         else:
             errors.append(abs(RED - 1))
