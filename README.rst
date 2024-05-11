@@ -8,7 +8,7 @@ Installation
 
 Install **hspcore** easily with pip:
 
-.. code-block:: python
+.. code-block:: bash
 
     pip install hspcore
 
